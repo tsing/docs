@@ -4,8 +4,8 @@
 
 您可以在对应的IaaS服务商面板上查看到对应的API Key，并填写到NiceScale的“云供应商”里。
 
-  AWS API Key ![AWS API Key](/screenshot/aws-apikey.png "AWS API Key")
-  QingCloud API Key ![青云API Key](/screenshot/qing-apikey.png "QingCloud API Key")
+  AWS API Key ![AWS API Key](/assets/aws-apikey.png "AWS API Key")
+  QingCloud API Key ![青云API Key](/assets/qing-apikey.png "QingCloud API Key")
 
 
 2 我可以直接在青云或AWS的控制台删除NiceScale创建的资源吗？

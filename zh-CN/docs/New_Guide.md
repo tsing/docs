@@ -15,7 +15,7 @@ NiceScale本身并不提供IaaS资源，如果你还没有任何IaaS的帐号，
 ### 第二步 部署PHP+MySQL
 进入NiceScale的控制台，点击左侧导航的“软件市场”，可以看到市场中有很多服务。先选择"Apache_PHP"服务，开始部署之旅。
 
-![PHP在NiceScale中的部署截图](/screenshot/Apache_PHP_deploy.png "PHP5 Deploy")
+![PHP在NiceScale中的部署截图](/assets/Apache_PHP_deploy.png "PHP5 Deploy")
 
 NiceScale和一般PaaS平台不同的一点是，提供高度灵活和定制，且使用简单。因此你可以在部署过程中看到各种配置选择，从云供应商、地区、操作系统、虚拟机类型、磁盘大小、软件参数等，都可以在线选择修改。NiceScale对软件服务的部署配置提供了默认设置，你可以不做任何修改即可运行良好。
 
@@ -25,18 +25,18 @@ NiceScale和一般PaaS平台不同的一点是，提供高度灵活和定制，�
 
 #### 添加MySQL服务
 进入刚才部署的项目，在左侧栏看到有一个"+添加服务"按钮，点击并选择MySQL进入MySQL部署。
-![MySQL部署截图](/screenshot/MySQL_deploy.png "MySQL Deploy")
+![MySQL部署截图](/assets/MySQL_deploy.png "MySQL Deploy")
 
 完成后，您的PHP和MySQL已经部署到同一个项目中了。
 
 ### 第三步 项目和服务管理
 软件一旦部署完成，这些服务就已经开始运行了。你可以点击左侧导航的项目，能够看到刚才部署的服务，出现在里面。点击进入该项目详情页面。
 
-![项目概览截图](/screenshot/prj_overview.png "Project Overview")
+![项目概览截图](/assets/prj_overview.png "Project Overview")
 
 从上面这张图可以看到该项目运行了哪些服务，每个服务运行在哪些虚拟机节点上，服务的目前状态如何等。
 
-![服务详情截图](/screenshot/svc_detail.png "Service Detail")
+![服务详情截图](/assets/svc_detail.png "Service Detail")
 
 您还可以针对每个服务进行各种管理操作，包括:
 

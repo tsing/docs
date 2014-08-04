@@ -2,7 +2,7 @@
 
 ## NiceScale 整体架构
 
-![NiceScale架构](/screenshot/nice_arch.png "NiceScale整体架构")
+![NiceScale架构](/assets/nice_arch.png "NiceScale整体架构")
 
 ## Docker 服务
 
