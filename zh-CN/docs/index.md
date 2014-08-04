@@ -1,5 +1,5 @@
 # 使用指南
-测试文档
+This is a test page.
 
 ### 全局变量
 路径： ```/etc/puppet/pdata/modules/.global.json```
