@@ -1,7 +1,7 @@
 # FAQ
 
 1. [如何绑定云供应商API Key?](#id1)
-2. [可以直接在青云或AWS的控制台删除NiceScale创建的资源吗？](#id2)
+2. [可以直接在青云或AWS的控制台删除NiceScale创建的资源吗？]("#id2")
 
 
 * <a id="#id1"> 如何绑定云供应商API Key? </a>
