@@ -1,6 +1,6 @@
 # FAQ
 
-1 如何绑定云供应商API Key
+1 <a name="id1"> 如何绑定云供应商API Key? </a>
 
 您可以在对应的IaaS服务商面板上查看到对应的API Key，并填写到NiceScale的“云供应商”里。
 
