@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 3
 title: 加入我们
 ---
 ## NiceScale核心理念
