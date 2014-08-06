@@ -45,7 +45,7 @@ NiceScale和一般PaaS平台不同的一点是，提供高度灵活和定制，�
 ![php服务详情截图](/assets/php-detail.png "PHP Detail")
 
 
-![mysql服务详情截图](/asserts/mysql-detail.png "MySQL Detail")
+![mysql服务详情截图](/assets/mysql-detail.png "MySQL Detail")
 
 您还可以针对每个服务进行各种管理操作，包括:
 
@@ -68,11 +68,11 @@ ssh -i privatekey.pem -p port root@public_ip (AWS机器上Ubuntu系统用户名�
 ### 第五步 检查服务运行状况
 NiceScale所有服务运行于Docker容器中，并且在/opt/nicescale目录下放置了各种管理脚本工具。
 
-我们登录刚才部署了php服务的一台机器：
+##### 我们登录刚才部署了php服务的一台机器
 ```
 ssh -i ~/.ssh/sshgo.pem root@121.201.7.110 -p 60003
      Welcome to use NiceScale.
-  You have the folling services running on this server:
+  You have the following services running on this server:
 
   +----------------+-----------------------------+------------------------------------+---------+---------------------------+
   | name           | service                     | path                               | status  | created_at                |
@@ -82,8 +82,7 @@ ssh -i ~/.ssh/sshgo.pem root@121.201.7.110 -p 60003
 root@i-eeuwn0rf:~# 
 ```
 
-接下来我们查看PHP服务部署在哪里，运行如何
-
+##### 接下来我们查看PHP服务部署在哪里，运行如何
 ```
 root@i-eeuwn0rf:~# ls -l /services
 total 4
@@ -103,10 +102,9 @@ root@i-eeuwn0rf:/services/53e190c43733650b31020000# docker ps
 CONTAINER ID        IMAGE                                                        COMMAND                CREATED             STATUS              PORTS               NAMES
 c2d7f1f7ae64        gd1-qingcloud.nicedocker.com:5000/nicescale/apache_php:5.5   /opt/nicedocker/run.   About an hour ago   Up About an hour                        53e190c43733650b31020000
 ```
-从上面的目录可以看出，NiceScale将服务的配置(conf)、日志(log)、数据(data)这三个目录放在Host进行管理，并在启动docker时，通过docker的volume绑定到容器内部的对应目录。同时conf目录下的配置文件，是通过配置管理工具来保障配置的一致性和收敛性，通过NiceScale面板对该服务的配置进行的任何变更都将会自动同步到这些节点上。env文件存放在conf目录下，在该项目中添加服务时，将会自动生成相关环境变量保存到该文件中，这样用户在编写php脚本时连接相关服务时，可以直接从$CONF_DIR/env中直接读取。
+从上面的目录可以看出，NiceScale将服务的配置(conf)、日志(log)、数据(data)这三个目录放在Host进行管理，并在启动docker时，通过docker的volume绑定到容器内部的对应目录。同时conf目录下的配置文件，是通过配置管理工具来保障配置的一致性和收敛性，通过NiceScale面板对该服务的配置进行的任何变更都将会自动同步到这些节点上。env文件存放在conf目录下，在该项目中添加服务时，将会自动生成相关环境变量保存到该文件中，这样用户在编写php脚本连接相关服务时，可以直接从$CONF_DIR/env中直接读取。
 
-登录到容器内部:
-
+##### 登录到容器内部
 ```
 root@i-eeuwn0rf:~# nicedocker login 53e190c43733650b31020000
 root@PHP_Apache_all:/# ps ax
