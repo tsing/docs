@@ -10,7 +10,9 @@ order: 2
 4. [项目内部的机器安全设置是怎样的？](#id4)
 
 
-* <a name="id1"> 如何绑定云供应商API Key? </a>
+
+
+* <a id="id1"> 如何绑定云供应商API Key? </a>
 
 您可以在对应的IaaS服务商面板上查看到对应的API Key，并填写到NiceScale的“云供应商”里。
 
