@@ -22,22 +22,6 @@ NiceScale中将一个或多个服务、集群的组合称为项目。项目是�
 
 NiceScale中最基本的管理单元，如mysql、tomcat、php都是服务。这些服务都运行在Docker容器里面。
 
-NiceScale同时提供了一个3个和Docker有关的特殊服务为用户提供类似私有dockerhub：
-* DockerBuild
-传入Dockerfile或giturl即可自动build并push到registry
-
-一旦git仓库内容发生更新，将会自动Build
-
-* DockerPull
-列出官方的image，并可选择要下载的image，registry将会自动pull后放入registry
-
-会自动更新下载的image服务
-
-* DockerRegistry
-私有的dockerhub
-
-私有dockerhub支持单region，也支持多region。支持多region时，一个任务在其中某个region构建或pull，完成后分发到其他region。
-
 ## 云适配器
 IaaS抽象层，主要抽象了网络、存储、虚拟机、IP等资源的API。
 
